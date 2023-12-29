@@ -14,4 +14,10 @@ public class KafkaTopicConfig {
       //.partitions(10).build(); // 10 partitions divided in this topic
   }
 
+  @Bean
+  public NewTopic javaguidesJsonTopic() {
+    return TopicBuilder.name("javaguides_json").build();
+    //.partitions(10).build(); // 10 partitions divided in this topic
+  }
+
 }
